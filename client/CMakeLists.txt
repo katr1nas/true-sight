@@ -13,6 +13,7 @@ set(USE_QT_VERSION 6 CACHE STRING "" FORCE)
 
 find_package(Qt6 REQUIRED COMPONENTS Quick Network WebSockets)
 find_package(OpenSSL REQUIRED)
+add_subdirectory(tests)
 add_subdirectory(external/qcoro)
 
 qt_standard_project_setup(REQUIRES 6.8)
